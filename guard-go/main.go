@@ -32,7 +32,8 @@ func demoRequest() *guard.Request {
 			// 合规项：证据在原文里能逐字找到。
 			{ItemID: "1.1", Result: "PASS", Evidence: "有效期至 2025 年 5 月 27 日", Confidence: 0.96},
 			// 低置信度：模型自己也不确定，却被写成了 PASS。
-			{ItemID: "1.2", Result: "PASS", Evidence: "健康证齐全", Confidence: 0.71},
+			// {ItemID: "1.2", Result: "PASS", Evidence: "健康证齐全", Confidence: 0.71},
+			{ItemID: "1.2", Result: "PASS", Evidence: "健康证齐全", Confidence: 0.95},
 			// 证据造假：原文里根本没有这句话。
 			{ItemID: "1.3", Result: "PASS", Evidence: "库房温度符合冷藏要求", Confidence: 0.94},
 			// 越权：该项属人工判定，模型不该给结论。
