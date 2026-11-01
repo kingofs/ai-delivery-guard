@@ -1,0 +1,22 @@
+# 编译产物
+bin/
+*.exe
+guard-java/out/
+*.class
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 本地临时
+*.log
+*.bak
+tmp/
